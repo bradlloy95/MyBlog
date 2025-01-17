@@ -50,3 +50,69 @@ Enhance your profile page:
 - Add a button that, when clicked, displays an alert with a welcome message.
 - Display the current date and time on the page using JavaScript.
 - Create an array of three of your favorite books/movies and display them dynamically
+
+# React Course - Stage Two: Introduction to React
+
+## Topics to Cover:
+1. **What is React?**
+   - Understanding the purpose of React.
+   - Key features: Components, Virtual DOM, and JSX.
+
+2. **Setting Up a React Environment**
+   - Installing Node.js and npm (if not already installed).
+   - Creating a new React app using `create-react-app` or Vite.
+   - Understanding the folder structure.
+
+3. **React Basics**
+   - Writing your first component.
+   - Understanding JSX and rendering elements.
+   - Introduction to `props`.
+
+---
+
+## Assignment 4: Setting Up and First Component
+
+1. Install Node.js and ensure `npm` is working.
+2. Create a new React project:
+   ```bash
+   npx create-react-app my-first-react-app
+   ```
+   or
+   ```bash
+   npm create vite@latest my-first-react-app --template react
+   ```
+3. Open your project in your favorite code editor (e.g., VS Code).
+
+4. Create a simple React component:
+   - Inside the `src` folder, create a new file `Greeting.js`.
+   - Write the following code:
+     ```jsx
+     import React from 'react';
+
+     function Greeting() {
+         return <h1>Hello, welcome to my React app!</h1>;
+     }
+
+     export default Greeting;
+     ```
+   - Import and use the `Greeting` component in `App.js`:
+     ```jsx
+     import React from 'react';
+     import Greeting from './Greeting';
+
+     function App() {
+         return (
+             <div>
+                 <Greeting />
+             </div>
+         );
+     }
+
+     export default App;
+     ```
+
+5. Start the development server:
+   ```bash
+   npm start
+   ```
+6. Verify that the message "Hello, welcome to my React app!" is displayed in the browser.
